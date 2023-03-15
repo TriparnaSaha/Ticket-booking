@@ -1,0 +1,31 @@
+.
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title> GODSPEED TICKET BOOKING</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <form class="box" action="/search" method="post">
+        {% csrf_token %}
+        <h1> FLY AWAY</h1>
+        <h2>We provide the best service, with great flights, at great price. Lightning fast booking, minimun wait time.</h2>
+        <h1>Go Godspeed..</h1>
+        <a href="flightinfo">
+            <input type="button" class="btn" name="" value="Flight Info">
+        </a>
+        <a href="contactus">
+            <input type="button" class="btn" name="" value="Contact us">
+        </a>
+
+    </form>
+    <a class="logout" href="customer">LOGOUT</a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>GODSPEED TICKET BOOKING </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/customer.css' %}">
+</head>
+
+<body>
+    <form class="box" action="login" method="post">
+        {% csrf_token %}
+        <h1>GODSPEED TICKET BOOKING:Customer</h1>
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <input type="submit" class="btn" name="" value="Login">
+        <a href="custsignup">
+            <input type="button" class="btn" name="" value="New Account">
+        </a>
+    </form>
+</body>
+
+</html>
