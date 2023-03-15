@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../img/cust-signup.jpg);
+    background-position: center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box h3 {
+    color: white;
+}
+
+.box {
+    width: 750px;
+    padding: 40px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"],
+.box input[type="date"] {
+    border: 0;
+    background: #000000;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.5s;
+    align-content: center;
+    justify-content: center;
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus.box input[type="date"]:focus,
+{
+    width: 280px;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #A52A2A;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #0033cc;
+}
+
+.submit a {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+}

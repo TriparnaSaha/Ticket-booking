@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>GODSPEED TICKET BOOKING</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custsignup.css' %}">
+</head>
+
+<body>
+    <form class="box" action="custsignup" method="post">
+        {% csrf_token %}
+        <h1>GODSPEED TICKET BOOKING</h1>
+        <h2>CUSTOMER SIGNUP</h2>
+        <h3>ACCOUNT DETAILS</h3>
+        <input type="text" name="first_name" placeholder="First name">
+        <input type="text" name="last_name" placeholder="Last name">
+        <input type="text" name="email" placeholder="Email ID">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password1" placeholder="Password">
+        <input type="password" name="password2" placeholder="Re-enter Password">
+        <a href="home.html">
+            <input type="SUBMIT" class="btn" name="" value="proceed">
+    </form>
+
+    <div>
+        {% for message in massages %}
+        <h4> {{messages}} </h4>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
